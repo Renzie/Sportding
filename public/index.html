@@ -10,7 +10,7 @@
 <body>
 
 <nav>
-    <div class="nav-wrapper blue">
+    <div class="nav-wrapper blue row">
         <ul id="slide-out" class="side-nav">
             <li><div class="user-view">
                 <div class="background">
@@ -19,27 +19,34 @@
 
                 <a href="#!name"><span class="white-text name">John Doe</span></a>
                 <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            </div>
+            </li>
+
+            <li><a>Profiel</a></li>
+            <li><a class="subheader">Instellingen</a></li>
             <li><div class="divider"></div></li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li><a class="waves-effect" href="#!">Uitloggen</a></li>
         </ul>
+        <ul id="filter" class="side-nav">
+            <li><a>Filter</a></li>
+            <li></li>
+            <li class="divider"></li>
+            <li><a>Fitness</a></li>
+            <li><a>Basket</a></li>
+            <li><a>Volleybal</a></li>
+        </ul>
+
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         <a href="#" class="brand-logo">(Naam app)</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
+        <a href="#" data-activates="filter" class="filter-collapse col right"><i class="material-icons">filter</i></a>
     </div>
 </nav>
 
 <section class="container">
-    <h5>Events</h5>
+    <h5>Evenementen</h5>
+    <div class="divider"></div>
 
-    <ul>
+    <ul id="events">
         <li>
             <div class="col s12 m7">
             <div class="card horizontal">
