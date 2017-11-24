@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo">(Naam app)</a>
+    </div>
+</nav>
+
+
+<section class="container">
+    <h5>Account aanmaken</h5>
+    <p>Je registreert als persoon.</p>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text">
+                    <label for="first_name">Voornaam</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text">
+                    <label for="last_name">Familienaam</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" type="email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="date-of-birth" type="text" class="datepicker">
+                    <label for="date-of-birth">Geboortedatum</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="username" type="text">
+                    <label for="username">Gebruikersnaam</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" type="password">
+                    <label for="password">Wachtwoord</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password-confirm" type="password">
+                    <label for="password-confirm">Wachtwoord bevestigen</label>
+                </div>
+                <div class="col s12">
+                    <input type="submit" class="btn" value="Registreren"/>
+                </div>
+        </form>
+    </div>
+</section>
+
+
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="assets/js/SportdingDA.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/materialize/js/materialize.min.js"></script>
+
+
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 100, // Creates a dropdown of 15 years to control year,
+        today: 'Vandaag',
+        clear: 'Reset',
+        close: 'Ok',
+        closeOnSelect: false // Close upon selecting a date,
+    });
+</script>
+
+</body>
+</html>
