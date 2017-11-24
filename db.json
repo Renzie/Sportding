@@ -1,19 +1,69 @@
 {
-  "posts": [
+  "gebruikers": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "gebruikersnaam": "jan.pol",
+      "wachtwoord": "123",
+      "isOrganisatie": false
+    },
+    {
+      "gebruikersnaam": "a",
+      "wachtwoord": "b",
+      "isOrganisatie": true,
+      "id": 2
     }
   ],
-  "comments": [
+  "persoons": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "gebruikerId": 1,
+      "leeftijd": 19
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "organisaties": [
+    {
+      "id": 1,
+      "gebruikerId": 1,
+      "naam": "GoSport"
+    },
+    {
+      "gebruikerId": 2,
+      "naam": "name",
+      "id": 2
+    }
+  ],
+  "sports": [
+    {
+      "id": 1,
+      "naam": "voetbal"
+    },
+    {
+      "id": 2,
+      "naam": "tennis"
+    },
+    {
+      "id": 3,
+      "naam": "volleybal"
+    }
+  ],
+  "persoons-sports": [
+    {
+      "persoonId": 1,
+      "sportId": 1
+    },
+    {
+      "persoonId": 2,
+      "sportId": 1
+    }
+  ],
+  "organisaties-sports": [
+    {
+      "organisatieId": 1,
+      "sportId": 1
+    },
+    {
+      "organisatieId": 1,
+      "sportId": 2
+    }
+  ]
 }
