@@ -4,3 +4,32 @@
     overflow-y: scroll;
 
 }
+
+.jims .card-image img{
+    margin-top: 7vh;
+}
+
+.oxygen .card-image img{
+    margin-top: 5vh;
+}
+
+.easyfit .card-image img{
+    margin-top: 5vh;
+}
+
+.basicfit .card-image img{
+    margin-top: 8vh;
+}
+
+
+.card-image{
+    width: 20%;
+}
+
+
+.logo{
+    width:30vw;
+    margin-top: 3vh;
+    margin-left: 7vw;
+
+}

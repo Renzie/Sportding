@@ -12,62 +12,66 @@
 <body>
 
 <nav>
-    <div class="nav-wrapper blue row">
+    <div class="nav-wrapper teal darken-1 row">
         <ul id="slide-out" class="side-nav">
-            <li><div class="user-view">
-                <div class="background">
-                    <img src="assets/images/background.jpg">
-                </div>
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="assets/images/background.jpg">
+                    </div>
 
-                <a href="#!name"><span class="white-text name">John Doe</span></a>
-                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
             </li>
 
-            <li><a>Evenementen</a></li>
-            <li><a>FitnessCentra</a></li>
+            <li><a href="index.html">Evenementen</a></li>
 
-            <li><div class="divider"></div></li>
-            <li><a>Profiel</a></li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a href="profile.html">Profiel</a></li>
             <li><a>Instellingen</a></li>
 
-            <li><div class="divider"></div></li>
-            <li><a class="waves-effect" href="#!">Uitloggen</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="login.html">Uitloggen</a></li>
         </ul>
         <ul id="filter" class="side-nav">
             <li><a>Filter</a></li>
-            <li><a class="erase-filters">Filters wissen</a></li>
             <li class="divider"></li>
-            <li><a>Fitness</a></li>
+
             <li><a>Spinning</a></li>
             <li><a>KickBox</a></li>
-            <li><a>Basket</a></li>
-            <li><a>Volleybal</a></li>
+            <li><a>Crossfit</a></li>
+            <li><a>Pilatis</a></li>
+            <li class="divider"></li>
+            <li><a class="sportclubs">Sportclubs</a></li>
+            <li><a class="erase-filters">Filters wissen</a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo">SportiGo</a>
+        <a href="#" class="brand-logo">Evenementen</a>
         <a href="#" data-activates="filter" class="filter-collapse col right"><i class="material-icons">filter</i></a>
     </div>
 </nav>
 
 <section class="container">
-    <h5>Evenementen</h5>
-    <div class="divider"></div>
-
     <ul id="events">
         <li class="jims kickbox">
             <a href="details.html">
                 <div class="col s12 m7">
                     <div class="card horizontal">
                         <div class="card-image">
-                            <img src="https://lorempixel.com/100/190/nature/6">
+                            <img src="assets/images/jims.png">
                         </div>
 
                         <div class="card-stacked">
                             <div class="card-content black-text">
                                 <h5>Kick-Box</h5>
-                                <p class="black-text">I am a very simple card. I am good at containing small bits of information.</p>
+                                <p class="black-text">Zaterdag 18:00 - 20:00</p>
                             </div>
                         </div>
                     </div>
@@ -77,84 +81,164 @@
         </li>
         <li class="jims spinning">
             <a href="details.html">
-            <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content black-text">
-                            <h5>Spinning</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/jims.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Spinning</h5>
+                                <p>Zaterdag 19:00 - 21:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                </a>
+            </a>
+        </li>
+        <li class="basicfit spinning">
+            <a href="details.html">
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/Basic-fit.jpg">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Spinning</h5>
+                                <p>Zondag 10:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </li>
         <li class="basicfit crossfit">
             <a href="details.html">
-            <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content black-text">
-                            <h5>Crossfit</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/Basic-fit.jpg">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Crossfit</h5>
+                                <p>Zondag 10:00 - 12:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                </a>
+            </a>
         </li>
         <li class="oxygen yoga">
             <a href="details.html">
 
-            <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content black-text">
-                            <h5>Yoga</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/oxygen.jpg">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Yoga</h5>
+                                <p>Zondag 13:00 - 16:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                </a>
+            </a>
         </li>
 
         <li class="easyfit pilatis">
             <a href="details.html">
-            <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content black-text">
-                            <h5>Pilatis</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/easyfit.jpeg">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Pilatis</h5>
+                                <p>Zondag 13:00 - 16:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                </a>
+            </a>
         </li>
 
-        <li>
-            <div class="row">
-                <div class="col s12 m5">
-                    <div class="card-panel ">
-          <span class="flow-text">Add new Event<i class="material-icons right">add</i>
-          </span>
+    </ul>
+    <ul class="hide" id="sportclubs">
+
+        <li class="jims">
+            <a href="details.html">
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/jims.png">
+                        </div>
+
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Jims</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
+        </li>
+
+        <li class="basicfit">
+            <a href="details.html">
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/Basic-fit.jpg">
+                        </div>
+
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Basic Fit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="oxygen">
+            <a href="details.html">
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/oxygen.jpg">
+                        </div>
+
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Oxygen</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="easyfit">
+            <a href="details.html">
+                <div class="col s12 m7">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="assets/images/easyfit.jpeg">
+                        </div>
+
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <h5>Easyfit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </li>
     </ul>
 </section>

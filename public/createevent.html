@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="assets/css/screen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper teal darken-1">
+        <a href="#" class="brand-logo">SportiGo</a>
+    </div>
+</nav>
+
+
+<section class="container">
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+
+                <div class="col">
+                    <h5>Nieuwe evenement</h5>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="username" type="text">
+                    <label for="username">Naam evenement</label>
+                </div>
+                <div class="input-field col s12">
+                    <input class="datepicker" type="text">
+                    <label>Dag:  </label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="van" class="timepicker" type="text">
+                    <label for="van">Van</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="tot" type="text" class="timepicker">
+                    <label for="tot">Tot</label>
+                </div>
+                <div class="col s8">
+                    <a href="organisatie.html" class="btn">Maak evenement</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="assets/js/SportdingDA.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/materialize/js/materialize.min.js"></script>
+
+
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 100, // Creates a dropdown of 15 years to control year,
+        today: 'Vandaag',
+        clear: 'Reset',
+        close: 'Ok',
+        closeOnSelect: false // Close upon selecting a date,
+    });
+</script>
+
+</body>
+</html>

@@ -15,12 +15,16 @@ $(function () {
         var classToFilter = $(this).text().toLowerCase();
 
         $("#events li").hide();
-        $("#events li." + classToFilter).show();
+        $("#events li." + classToFilter).fadeIn();
     });
 
     $("#filter li a.erase-filters").on("click", function() {
-        $("#events li").show();
+        $("#events li").fadeOut();
     });
+    $('.sportclubs').on('click', function () {
+        $("#events").addClass('hide');
+        $('#sportclubs').removeClass('hide');
+    })
 });
 
 var scrollFire = function () {
