@@ -34,7 +34,10 @@ function initMap() {
 
 
             var infowindow = new google.maps.InfoWindow({
-                content: "<span style='font-size: 18px'>" + item.Sportinfrastructuur + "</span><p>" + item.Omschrijving + "</p>"
+                content: "<span style='font-size: 18px'>" + item.Sportinfrastructuur + "</span>" +
+                "<p>" + item.Omschrijving + "</p>" +
+                    "<a href='http://www.google.com/maps/place/" +
+                item.json_geometry.coordinates[1] + "," + item.json_geometry.coordinates[0] + "'>Bekijk op Google Maps</a>"
             });
 
             infoWindows.push(infowindow);
