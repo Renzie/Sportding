@@ -3,4 +3,15 @@
  */
 $(function () {
     $(".button-collapse").sideNav();
-})
+
+    $('.filter-collapse').sideNav({
+        menuWidth: 250,
+        closeOnClick: true,
+        edge: 'right'
+        }
+    )
+});
+
+var scrollFire = function () {
+    
+}
