@@ -5,7 +5,7 @@ $(function () {
     $(".button-collapse").sideNav();
 
     $('.filter-collapse').sideNav({
-        menuWidth: 300,
+        menuWidth: 250,
         closeOnClick: true,
         edge: 'right'
         }
